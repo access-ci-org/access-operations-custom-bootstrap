@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design System Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet"
+          id="google-font-archivo-css"
+          href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,70,400;0,100,400;0,100,500;0,100,600;0,100,700;0,100,800;1,100,400&amp;display=swap"
+          media="all"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet" href="node_modules/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="dist/custom-bootstrap.css">
+
+
+    <style>
+        /* Essential Docsify + Bootstrap Grid Layout Corrections */
+        .markdown-section table {
+            display: table !important;
+            width: 100% !important;
+            margin-bottom: 1.5rem;
+        }
+
+        .markdown-section td {
+            vertical-align: middle !important;
+        }
+
+        /* Modern CSS variable modal stack correction layer */
+        .modal {
+            z-index: 1060 !important;
+        }
+
+        .modal-backdrop {
+            z-index: 1050 !important;
+        }
+
+        /* Simplified documentation utility color swatches */
+        .color-preview-box {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            display: inline-block;
+            vertical-align: middle;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .opacity-ribbon-node {
+            flex: 1;
+            padding: 0.75rem 0.5rem;
+            text-align: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div id="app">Loading our design framework...</div>
+
+<script>
+    window.$docsify = {
+        name: 'Custom Bootstrap UI',
+        loadSidebar: true,
+        executeScript: true,
+        alias: {'/.*/_sidebar.md': '/_sidebar.md'},
+        plugins: [
+            function (hook) {
+                // Instantly initializes elements every single time a page module mounts cleanly
+                hook.doneEach(function () {
+                    if (window.bootstrap) {
+                        // Cleanly instantiate all Accordions
+                        document.querySelectorAll('.accordion .accordion-collapse').forEach(el => {
+                            bootstrap.Collapse.getOrCreateInstance(el, {toggle: false});
+                        });
+                        // Cleanly bind all Modal dialog click triggers
+                        document.querySelectorAll('[data-bs-toggle="modal"]').forEach(el => {
+                            el.addEventListener('click', (e) => {
+                                e.preventDefault();
+                                const target = document.querySelector(el.getAttribute('data-bs-target'));
+                                if (target) {
+                                    document.body.appendChild(target); // Pull clear out of container layout traps
+                                    bootstrap.Modal.getOrCreateInstance(target).show();
+                                }
+                            });
+                        });
+                    }
+                });
+            }
+        ]
+    }
+</script>
+
+<script src="node_modules/docsify/lib/docsify.min.js"></script>
+<script src="node_modules/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
