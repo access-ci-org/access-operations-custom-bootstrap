@@ -12,6 +12,7 @@ cp index.html public/
 cp README.md public/
 cp _sidebar.md public/
 cp .nojekyll public/
+cp -r components public/components
 
 # Copy the dist to the public folder
 cp -r dist public/dist
