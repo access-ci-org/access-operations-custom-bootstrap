@@ -18,8 +18,10 @@ cp -r components public/components
 cp -r dist public/dist
 
 # Copy the specific dependency files from node_modules to the public folder
-mkdir -p public/node_modules/bootstrap-icons/font
+mkdir -p public/node_modules/bootstrap-icons/font/fonts
 cp node_modules/bootstrap-icons/font/bootstrap-icons.min.css public/node_modules/bootstrap-icons/font/
+cp node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff public/node_modules/bootstrap-icons/font/fonts
+cp node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2 public/node_modules/bootstrap-icons/font/fonts
 
 mkdir -p public/node_modules/docsify/lib/themes
 cp node_modules/docsify/lib/themes/vue.css public/node_modules/docsify/lib/themes/
