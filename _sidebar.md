@@ -5,5 +5,5 @@
   * [Buttons](components/buttons.md)
   * [Typography & Utilities](components/typography.md)
   * [Tables](components/tables.md)
-  * [Accordions](components/accordion.md)
+  * [Accordions](components/accordions.md)
   * [Modals](components/modals.md)
