@@ -9,7 +9,9 @@
   "scripts": {
     "build:css": "sass scss/main.scss dist/access-operations-custom-bootstrap.css --style=compressed",
     "watch:css": "sass --watch scss/main.scss dist/access-operations-custom-bootstrap.css",
-    "docs": "npm run build:css && npx serve ."
+    "docs": "npm run build:css && npx serve .",
+    "version": "npm run build:css && git add dist -f",
+    "postversion": "git push && git push --tags"
   },
   "files": [
     "dist",
