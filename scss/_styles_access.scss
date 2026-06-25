@@ -151,7 +151,8 @@ h4, .h4 {
   border-style: dashed !important;
 }
 
-.width-fit-content .btn.width-fit-content {
+.width-fit-content,
+.btn.width-fit-content {
   width: fit-content;
 }
 
