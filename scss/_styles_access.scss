@@ -41,9 +41,9 @@
     }
 
     &:hover {
-      background-color: #ffffff !important;
-      border-color: $color !important;
-      color: $color !important;
+      background-color: $white !important;
+      border-color: $secondary-dark !important;
+      color: $secondary-dark !important;
     }
   }
 
@@ -57,8 +57,9 @@
     }
 
     &:hover {
-      background-color: $color !important;
-      border-color: $color !important;
+      background-color: $secondary-dark !important;
+      border-color: $secondary-dark !important;
+      color: $white !important;
     }
   }
 }
