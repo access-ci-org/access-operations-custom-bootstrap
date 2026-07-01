@@ -1,49 +1,55 @@
 // scss/_styles_access.scss
 
-// Deep/Dark background utilities automatically force white text
-.bg-dark,
-.bg-primary,
-.bg-secondary,
-.bg-blue,
-.bg-blue-800,
-.bg-green,
-.bg-success,
-.bg-info,
-.bg-danger,
-.bg-gray-600 {
-  color: #ffffff;
+h3, .h3 {
+  color: $dark !important;
 }
 
-// Bright/Light background utilities automatically force dark text
-.bg-light,
-.bg-accent-primary,
-.bg-accent-secondary,
-.bg-green-200,
-.bg-cyan,
-.bg-warning,
-.bg-white,
-.bg-gray-100,
-.bg-gray-200,
-.bg-gray-300 {
-  color: #212529;
+.btn.btn-link {
+  color: $black;
+
+  &:hover {
+    color: $primary;
+  }
 }
 
 // Compile button styles
 @each $name, $color in $theme-colors {
+
+  .text-#{$name} {
+    &.btn.btn-link, &.btn-link {
+      color: $color;
+
+      &:hover {
+        color: $primary !important;
+      }
+    }
+  }
+
+  .bg-#{$name} {
+    color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $white);
+
+    .btn.btn-link {
+      color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $white);
+
+      &:hover {
+        color: color-contrast($color, $color-contrast-dark: $primary, $color-contrast-light: $accent-primary);
+      }
+    }
+
+    h3, .h3 {
+      color: color-contrast($color, $color-contrast-dark: $dark, $color-contrast-light: $accent-primary);
+    }
+  }
 
   // Normal Buttons: Turn background white, keep border color, text matches variant
   .btn-#{$name} {
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;
     min-width: 144px;
 
+    @include button-variant($color, $color, $hover-background: $white, $hover-border: $secondary-dark);
+
     &.btn-lg {
       min-width: 292px;
-    }
-
-    &:hover {
-      background-color: $white !important;
-      border-color: $secondary-dark !important;
-      color: $secondary-dark !important;
     }
   }
 
@@ -52,14 +58,18 @@
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;
     min-width: 144px;
 
+    @include button-outline-variant($color, $color-hover: $white);
+
+    background-color: color-contrast($color, $color-contrast-dark: $secondary-dark, $color-contrast-light: $white);
+
     &.btn-lg {
       min-width: 292px;
     }
 
     &:hover {
-      background-color: $secondary-dark !important;
-      border-color: $secondary-dark !important;
-      color: $white !important;
+      background-color: $color;
+      border-color: $color;
+      color: color-contrast($color, $color-contrast-dark: $secondary-dark, $color-contrast-light: $white);
     }
   }
 }
@@ -72,11 +82,6 @@ body {
   box-sizing: border-box;
 }
 
-
-h3, .h3 {
-  color: $dark !important;
-}
-
 h4, .h4 {
   font-weight: 800;
 }
@@ -86,17 +91,12 @@ h4, .h4 {
   text-decoration: none;
   user-select: auto;
 
-  &.btn-primary {
-    color: #ffffff;
-  }
-
   &.btn-link {
     margin: 0px;
     padding: 0px;
     width: initial;
     text-align: left;
     font-size: inherit;
-    color: #000000;
     text-decoration: underline;
     font-weight: bold;
     border: none;
@@ -109,7 +109,6 @@ h4, .h4 {
       font-weight: bold;
       background-color: transparent;
       border: none;
-      color: $primary !important;
     }
 
     &.text-decoration-none:hover {
@@ -117,7 +116,6 @@ h4, .h4 {
     }
   }
 }
-
 
 .modal-body {
   padding-top: 90px !important;

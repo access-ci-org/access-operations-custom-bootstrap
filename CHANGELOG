@@ -1,0 +1,11 @@
+# Changelog
+
+The general format of entries is:
+<tag> <yyyy>-<mm>-<dd> <author>
+    <#> - [new/fix/bug-fix/draft/dependency] <description of the fix, feature or change>
+        - <webapp path 1>
+        - <webapp path 2>
+        - *
+
+v0.0.11 2026-07-01 dinukadesilva
+    1 - [fix] Fixing color contrasts of buttons and typography
