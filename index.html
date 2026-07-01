@@ -20,7 +20,6 @@
 
 
     <link rel="stylesheet" href="node_modules/docsify/lib/themes/vue.css">
-    <link rel="stylesheet" href="dist/access-operations-custom-bootstrap.css">
 
 
     <style>
@@ -65,7 +64,26 @@
             font-size: 0.75rem;
             font-weight: 600;
         }
+
+        .markdown-section h1,
+        .markdown-section h2,
+        .markdown-section h3,
+        .markdown-section h4,
+        .markdown-section h5,
+        .markdown-section h6,
+        .markdown-section strong,
+        .markdown-section em {
+            color: unset;
+        }
+
+        /* Disable alternating background colors for tables */
+        .markdown-section table tbody tr:nth-child(even) {
+            background-color: transparent !important;
+        }
     </style>
+
+    <link rel="stylesheet" href="dist/access-operations-custom-bootstrap.css">
+
 </head>
 <body>
 <div id="app">Loading our design framework...</div>
