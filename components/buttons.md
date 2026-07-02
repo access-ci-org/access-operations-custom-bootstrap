@@ -36,6 +36,5 @@ background color to maintain the accessibility standards.
 |:-------------------|:------------------------------------------------------------------------|:----------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|
 | **`blue`**         | <button type="button" class="btn btn-blue">.btn-blue</button>           | <button type="button" class="btn btn-outline-blue">.btn-outline-blue</button>           | <button type="button" class="btn btn-link text-blue">Link</button>       |
 | **`blue-800`**     | <button type="button" class="btn btn-blue-800">.btn-blue-800</button>   | <button type="button" class="btn btn-outline-blue-800">.btn-outline-blue-800</button>   | <button type="button" class="btn btn-link text-blue-800">Link</button>   |
-| **`green`**        | <button type="button" class="btn btn-green">.btn-green</button>         | <button type="button" class="btn btn-outline-green">.btn-outline-green</button>         | <button type="button" class="btn btn-link text-green">Link</button>      |
 | **`green-200`**    | <button type="button" class="btn btn-green-200">.btn-green-200</button> | <button type="button" class="btn btn-outline-green-200">.btn-outline-green-200</button> | <button type="button"  class="btn btn-link text-green-200">Link</button> |
 
