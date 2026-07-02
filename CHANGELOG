@@ -7,7 +7,7 @@ The general format of entries is:
         - <webapp path 2>
         - *
 
-v0.0.11 2026-07-02 dinukadesilva
+v0.0.12 2026-07-02 dinukadesilva
     1 - [fix] Removing the color contrast validation from outline buttons
 
 v0.0.11 2026-07-01 dinukadesilva
