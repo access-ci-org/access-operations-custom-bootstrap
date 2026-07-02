@@ -33,9 +33,7 @@
 |:--------------|:-------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|:----------|
 | `$blue`       | <span class="d-inline-block rounded p-2 bg-blue border align-middle me-1"></span> `.bg-blue`           | <span class="text-blue fw-bold fs-6">.text-blue</span>           | <div class="p-1 border border-blue text-dark rounded text-center fs-8">.border-blue</div>           | `#0d6efd` |
 | `$blue-800`   | <span class="d-inline-block rounded p-2 bg-blue-800 border align-middle me-1"></span> `.bg-blue-800`   | <span class="text-blue-800 fw-bold fs-6">.text-blue-800</span>   | <div class="p-1 border border-blue-800 text-dark rounded text-center fs-8">.border-blue-800</div>   | `#193CB8` |
-| `$green`      | <span class="d-inline-block rounded p-2 bg-green border align-middle me-1"></span> `.bg-green`         | <span class="text-green fw-bold fs-6">.text-green</span>         | <div class="p-1 border border-green text-dark rounded text-center fs-8">.border-green</div>         | `#198754` |
 | `$green-200`  | <span class="d-inline-block rounded p-2 bg-green-200 border align-middle me-1"></span> `.bg-green-200` | <span class="text-green-200 fw-bold fs-6">.text-green-200</span> | <div class="p-1 border border-green-200 text-dark rounded text-center fs-8">.border-green-200</div> | `#a3cfbb` |
-| `$cyan`       | <span class="d-inline-block rounded p-2 bg-cyan border align-middle me-1"></span> `.bg-cyan`           | <span class="text-cyan fw-bold fs-6">.text-cyan</span>           | <div class="p-1 border border-cyan text-dark rounded text-center fs-8">.border-cyan</div>           | `#0dcaf0` |
 
 ---
 
