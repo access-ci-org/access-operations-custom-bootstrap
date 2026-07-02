@@ -60,7 +60,7 @@ h3, .h3 {
 
     @include button-outline-variant($color, $color-hover: $white);
 
-    background-color: color-contrast($color, $color-contrast-dark: $secondary-dark, $color-contrast-light: $white);
+    // background-color: color-contrast($color, $color-contrast-dark: $secondary-dark, $color-contrast-light: $white);
 
     &.btn-lg {
       min-width: 292px;

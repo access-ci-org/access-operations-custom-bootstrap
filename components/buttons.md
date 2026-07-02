@@ -5,9 +5,6 @@
 **Normal Button**: The text color is changed to white or black for each variant based on the color contrast ratio on the
 background color to maintain the accessibility standards.
 
-**Outline Button**: The background color is changed to white or black for each variant based on the color contrast ratio
-on the text color to maintain the accessibility standards.
-
 | Variant Class Name     | Normal Button Variant                                                                 | Outline Button Variant                                                                                | Link Button Variant                                                                                |
 |:-----------------------|:--------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | **`dark`**             | <button type="button" class="btn btn-dark">.btn-dark</button>                         | <button type="button" class="btn btn-outline-dark">.btn-outline-dark</button>                         | <button type="button" class="btn btn-link">Link</button>                                           |
