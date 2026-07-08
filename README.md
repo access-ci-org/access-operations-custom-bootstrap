@@ -2,7 +2,9 @@
 
 A custom Bootstrap theme and component library for ACCESS Operations applications.
 
-📖 **Documentation:** https://access-ci-org.github.io/access-operations-custom-bootstrap/
+**Documentation:** https://access-ci-org.github.io/access-operations-custom-bootstrap/
+
+**Github:** https://github.com/access-ci-org/access-operations-custom-bootstrap
 
 ## Google Fonts
 
