@@ -8,8 +8,11 @@ The general format of entries is:
         - *
 
 
+v0.0.14 2026-07-08 dinukadesilva
+    1 - [new] Updated readme with installation instructions
+
 v0.0.13 2026-07-02 dinukadesilva
-    1 - [fix] RRemoving redundant color variants (green and cyan)
+    1 - [fix] Removing redundant color variants (green and cyan)
 
 v0.0.12 2026-07-02 dinukadesilva
     1 - [fix] Removing the color contrast validation from outline buttons
