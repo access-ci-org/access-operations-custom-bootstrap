@@ -80,6 +80,33 @@
         .markdown-section table tbody tr:nth-child(even) {
             background-color: transparent !important;
         }
+
+        h1.app-name {
+            text-align: left;
+            padding: 10px;
+            font-size: 1rem;
+            background: #107180;
+            color: white;
+        }
+
+        aside.sidebar {
+            padding-top: 0px;
+        }
+    </style>
+
+    <!-- Custom Color Overrides -->
+    <style>
+        :root {
+            /* Main theme accent (links, active states, blockquotes) */
+            --theme-color: #107180;
+
+            /* Background colors */
+            --background: #ffffff;
+
+            /* Sidebar styles */
+            --sidebar-background: #f8f9fa;
+            --sidebar-nav-link-color: #1a5b6e;
+        }
     </style>
 
     <link rel="stylesheet" href="dist/access-operations-custom-bootstrap.css">
@@ -90,7 +117,7 @@
 
 <script>
     window.$docsify = {
-        name: 'Custom Bootstrap UI',
+        name: 'access-operations-custom-bootstrap',
         loadSidebar: true,
         executeScript: true,
         alias: {'/.*/_sidebar.md': '/_sidebar.md'},

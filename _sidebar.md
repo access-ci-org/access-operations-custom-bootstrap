@@ -1,6 +1,4 @@
-* [Framework Homepage](README.md)
-
-* **Documentation Modules**
+* [Documentation](README.md)
   * [Color Variants](components/colors.md)
   * [Buttons](components/buttons.md)
   * [Typography & Utilities](components/typography.md)
