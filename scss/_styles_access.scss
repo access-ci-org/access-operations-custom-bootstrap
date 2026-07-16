@@ -4,12 +4,6 @@ h3, .h3 {
   color: $dark;
 }
 
-.btn.btn-link {
-  &:hover {
-    color: $primary;
-  }
-}
-
 // Compile button styles
 @each $name, $color in $theme-colors {
 
@@ -18,10 +12,10 @@ h3, .h3 {
     &.btn-link,
     .btn.btn-link,
     .btn-link {
-      color: $color;
+      color: $color !important;
 
       &:hover {
-        color: $primary;
+        color: $primary !important;
       }
     }
   }
@@ -29,16 +23,19 @@ h3, .h3 {
   .bg-#{$name} {
     color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $white);
 
-    .btn.btn-link {
-      color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $accent-primary);
+    &.btn.btn-link,
+    &.btn-link,
+    .btn.btn-link,
+    .btn-link {
+      color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $accent-primary) !important;
 
       &:hover {
-        color: color-contrast($color, $color-contrast-dark: $primary, $color-contrast-light: $accent-secondary);
+        color: color-contrast($color, $color-contrast-dark: $primary, $color-contrast-light: $accent-secondary) !important;
       }
     }
 
     h3, .h3 {
-      color: color-contrast($color, $color-contrast-dark: $dark, $color-contrast-light: $accent-primary);
+      color: color-contrast($color, $color-contrast-dark: $dark, $color-contrast-light: $white);
     }
   }
 

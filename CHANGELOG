@@ -9,6 +9,9 @@ The general format of entries is:
 
 
 v0.0.16 2026-07-16 dinukadesilva
+    1 - [fix] Fix btn-link scopes
+
+v0.0.16 2026-07-16 dinukadesilva
     1 - [fix] Fix typography colors according to background colors
 
 v0.0.15 2026-07-08 dinukadesilva
