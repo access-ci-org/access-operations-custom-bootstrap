@@ -1,73 +1,83 @@
 // scss/_styles_access.scss
 
-h3, .h3 {
-  color: $dark;
+@each $size, $value in $font-sizes {
+  h#{$size}, .h#{$size} {
+    font-size: $value;
+    font-weight: $headings-font-weight;
+  }
 }
 
+@mixin generate_typography_colors($background-color: $white) {
+  @each $size, $value in $font-sizes {
+    h#{$size}, .h#{$size} {
+      @if $size == 3 {
+        color: color-contrast($background-color, $color-contrast-dark: $dark, $color-contrast-light: $white);
+      } @else {
+        color: color-contrast($background-color, $color-contrast-dark: $black, $color-contrast-light: $white);
+      }
+    }
+  }
+}
+
+@mixin generate_btn_link_colors($background-color: $white, $color: $black) {
+  &.btn.btn-link,
+  &.btn-link,
+  .btn.btn-link,
+  .btn-link {
+    color: color-contrast($background-color, $color-contrast-dark: $color, $color-contrast-light: $accent-primary) !important;
+
+    &:hover {
+      color: color-contrast($background-color, $color-contrast-dark: $primary, $color-contrast-light: $accent-secondary) !important;
+    }
+  }
+}
+
+@include generate_typography_colors();
+@include generate_btn_link_colors();
+
 // Compile button styles
-@each $name, $color in $theme-colors {
+@each $theme-name, $theme-color in $theme-colors {
 
-  .text-#{$name} {
-    &.btn.btn-link,
-    &.btn-link,
-    .btn.btn-link,
-    .btn-link {
-      color: $color !important;
-
-      &:hover {
-        color: $primary !important;
-      }
-    }
+  .text-#{$theme-name} {
+    @include generate_btn_link_colors($color: $theme-color);
   }
 
-  .bg-#{$name} {
-    color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $white);
+  .bg-#{$theme-name} {
+    color: color-contrast($theme-color, $color-contrast-dark: $black, $color-contrast-light: $white) !important;
 
-    &.btn.btn-link,
-    &.btn-link,
-    .btn.btn-link,
-    .btn-link {
-      color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $accent-primary) !important;
-
-      &:hover {
-        color: color-contrast($color, $color-contrast-dark: $primary, $color-contrast-light: $accent-secondary) !important;
-      }
-    }
-
-    h3, .h3 {
-      color: color-contrast($color, $color-contrast-dark: $dark, $color-contrast-light: $white);
-    }
+    @include generate_btn_link_colors($background-color: $theme-color);
+    @include generate_typography_colors($background-color: $theme-color);
   }
 
-  // Normal Buttons: Turn background white, keep border color, text matches variant
-  .btn-#{$name} {
+  // Normal Buttons: Turn background white, keep border theme-color, text matches variant
+  .btn-#{$theme-name} {
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;
     min-width: 144px;
 
-    @include button-variant($color, $color, $hover-background: $white, $hover-border: $secondary-dark);
+    @include button-variant($theme-color, $theme-color, $hover-background: $white, $hover-border: $secondary-dark);
 
     &.btn-lg {
       min-width: 292px;
     }
   }
 
-  // Outline Buttons: Fill background with variant color, text turns white
-  .btn-outline-#{$name} {
+  // Outline Buttons: Fill background with variant theme-color, text turns white
+  .btn-outline-#{$theme-name} {
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;
     min-width: 144px;
 
-    @include button-outline-variant($color, $color-hover: $white);
+    @include button-outline-variant($theme-color, $color-hover: $white);
 
-    // background-color: color-contrast($color, $color-contrast-dark: $secondary-dark, $color-contrast-light: $white);
+    // background-theme-color: theme-color-contrast($theme-color, $theme-color-contrast-dark: $secondary-dark, $theme-color-contrast-light: $white);
 
     &.btn-lg {
       min-width: 292px;
     }
 
     &:hover {
-      background-color: $color;
-      border-color: $color;
-      color: color-contrast($color, $color-contrast-dark: $secondary-dark, $color-contrast-light: $white);
+      background-color: $theme-color;
+      border-color: $theme-color;
+      color: color-contrast($theme-color, $color-contrast-dark: $secondary-dark, $color-contrast-light: $white);
     }
   }
 }
