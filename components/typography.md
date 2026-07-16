@@ -2,18 +2,20 @@
 
 ## Typography
 
-| #    | Heading Variant                                           | Font Size Utility                         |
-|:-----|:----------------------------------------------------------|:------------------------------------------|
-| `1`  | <h1 class="m-0 fw-bold fs-1">.h1 Heading</h1>             | <span class="fs-1 fw-bold">.fs-1</span>   |
-| `2`  | <h2 class="m-0 fw-bold fs-2">.h2 Heading</h2>             | <span class="fs-2 fw-bold">.fs-2</span>   |
-| `3`  | <h3 class="m-0 fw-bold fs-3">.h3 Heading</h3>             | <span class="fs-3 fw-bold">.fs-3</span>   |
-| `4`  | <h4 class="m-0 fs-4">.h4 Heading</h4>                     | <span class="fs-4 fw-bold">.fs-4</span>   |
-| `5`  | <h5 class="m-0 fw-bold fs-5">.h5 Heading</h5>             | <span class="fs-5 fw-bold">.fs-5</span>   |
-| `6`  | <h6 class="m-0 fw-bold fs-6">.h6 Heading</h6>             | <span class="fs-6 fw-bold">.fs-6</span>   |
-| `7`  | <h7 class="m-0 fw-bold fs-7 d-block">.h7 Heading</h7>     | <span class="fs-7 fw-bold">.fs-7</span>   |
-| `8`  | <h8 class="m-0 fw-bold fs-8 d-block">.h8 Heading</h8>     | <span class="fs-8 fw-bold">.fs-8</span>   |
-| `9`  | <h9 class="m-0 fw-bold fs-9 d-block">.h9 Heading</h9>     | <span class="fs-9 fw-bold">.fs-9</span>   |
-| `10` | <h10 class="m-0 fw-bold fs-10 d-block">.h10 Heading</h10> | <span class="fs-10 fw-bold">.fs-10</span> |
+<div class="bg-white">
+
+| #    | Heading Variant         | Font Size Utility                 |
+|:-----|:------------------------|:----------------------------------|
+| `1`  | <h1>.h1 Heading</h1>    | <span class="fs-1">.fs-1</span>   |
+| `2`  | <h2>.h2 Heading</h2>    | <span class="fs-2">.fs-2</span>   |
+| `3`  | <h3>.h3 Heading</h3>    | <span class="fs-3">.fs-3</span>   |
+| `4`  | <h4>.h4 Heading</h4>    | <span class="fs-4">.fs-4</span>   |
+| `5`  | <h5>.h5 Heading</h5>    | <span class="fs-5">.fs-5</span>   |
+| `6`  | <h6>.h6 Heading</h6>    | <span class="fs-6">.fs-6</span>   |
+| `7`  | <h7>.h7 Heading</h7>    | <span class="fs-7">.fs-7</span>   |
+| `8`  | <h8>.h8 Heading</h8>    | <span class="fs-8">.fs-8</span>   |
+| `9`  | <h9>.h9 Heading</h9>    | <span class="fs-9">.fs-9</span>   |
+| `10` | <h10>.h10 Heading</h10> | <span class="fs-10">.fs-10</span> |
 
 <div class="w-100 p-3">
     <p>You can use the mark tag to <mark>highlight</mark> text.</p>
@@ -25,6 +27,8 @@
     <p><strong>This line rendered as bold text.</strong></p>
     <p><em>This line rendered as italicized text.</em></p>
     <a href="#" class="btn btn-link">Link</a>
+</div>
+
 </div>
 
 ```html
@@ -43,18 +47,18 @@
 
 <div class="bg-dark">
 
-| #    | Heading Variant                                           | Font Size Utility                         |
-|:-----|:----------------------------------------------------------|:------------------------------------------|
-| `1`  | <h1 class="m-0 fw-bold fs-1">.h1 Heading</h1>             | <span class="fs-1 fw-bold">.fs-1</span>   |
-| `2`  | <h2 class="m-0 fw-bold fs-2">.h2 Heading</h2>             | <span class="fs-2 fw-bold">.fs-2</span>   |
-| `3`  | <h3 class="m-0 fw-bold fs-3">.h3 Heading</h3>             | <span class="fs-3 fw-bold">.fs-3</span>   |
-| `4`  | <h4 class="m-0 fs-4">.h4 Heading</h4>                     | <span class="fs-4 fw-bold">.fs-4</span>   |
-| `5`  | <h5 class="m-0 fw-bold fs-5">.h5 Heading</h5>             | <span class="fs-5 fw-bold">.fs-5</span>   |
-| `6`  | <h6 class="m-0 fw-bold fs-6">.h6 Heading</h6>             | <span class="fs-6 fw-bold">.fs-6</span>   |
-| `7`  | <h7 class="m-0 fw-bold fs-7 d-block">.h7 Heading</h7>     | <span class="fs-7 fw-bold">.fs-7</span>   |
-| `8`  | <h8 class="m-0 fw-bold fs-8 d-block">.h8 Heading</h8>     | <span class="fs-8 fw-bold">.fs-8</span>   |
-| `9`  | <h9 class="m-0 fw-bold fs-9 d-block">.h9 Heading</h9>     | <span class="fs-9 fw-bold">.fs-9</span>   |
-| `10` | <h10 class="m-0 fw-bold fs-10 d-block">.h10 Heading</h10> | <span class="fs-10 fw-bold">.fs-10</span> |
+| #    | Heading Variant         | Font Size Utility                 |
+|:-----|:------------------------|:----------------------------------|
+| `1`  | <h1>.h1 Heading</h1>    | <span class="fs-1">.fs-1</span>   |
+| `2`  | <h2>.h2 Heading</h2>    | <span class="fs-2">.fs-2</span>   |
+| `3`  | <h3>.h3 Heading</h3>    | <span class="fs-3">.fs-3</span>   |
+| `4`  | <h4>.h4 Heading</h4>    | <span class="fs-4">.fs-4</span>   |
+| `5`  | <h5>.h5 Heading</h5>    | <span class="fs-5">.fs-5</span>   |
+| `6`  | <h6>.h6 Heading</h6>    | <span class="fs-6">.fs-6</span>   |
+| `7`  | <h7>.h7 Heading</h7>    | <span class="fs-7">.fs-7</span>   |
+| `8`  | <h8>.h8 Heading</h8>    | <span class="fs-8">.fs-8</span>   |
+| `9`  | <h9>.h9 Heading</h9>    | <span class="fs-9">.fs-9</span>   |
+| `10` | <h10>.h10 Heading</h10> | <span class="fs-10">.fs-10</span> |
 
 <div class="w-100 p-3">
     <p>You can use the mark tag to <mark>highlight</mark> text.</p>
