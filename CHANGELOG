@@ -7,6 +7,8 @@ The general format of entries is:
         - <webapp path 2>
         - *
 
+v0.0.19 2026-07-16 dinukadesilva
+    1 - [fix] Style fixes in the documentation
 
 v0.0.18 2026-07-16 dinukadesilva
     1 - [fix] Fix typography element styles
