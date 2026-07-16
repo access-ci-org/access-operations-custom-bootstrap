@@ -1,6 +1,6 @@
 {
   "name": "access-operations-custom-bootstrap",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "style": "dist/access-operations-custom-bootstrap.css",
   "exports": {
     ".": "./dist/access-operations-custom-bootstrap.css",
