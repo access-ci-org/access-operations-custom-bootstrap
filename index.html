@@ -21,7 +21,6 @@
 
     <link rel="stylesheet" href="node_modules/docsify/lib/themes/vue.css">
 
-
     <style>
         /* Essential Docsify + Bootstrap Grid Layout Corrections */
         .markdown-section table {
@@ -35,7 +34,7 @@
         }
 
         .markdown-section h2.accordion-header {
-            margin: 0;
+            margin: inherit;
         }
 
         /* Modern CSS variable modal stack correction layer */
@@ -74,7 +73,18 @@
         .markdown-section strong,
         .markdown-section em,
         .markdown-section a {
-            color: unset;
+            color: inherit;
+        }
+
+
+        .markdown-section h1,
+        .markdown-section h2,
+        .markdown-section h3,
+        .markdown-section h4,
+        .markdown-section h5,
+        .markdown-section h6 {
+            margin: 0 0 0.5rem 0;
+            font-weight: 800;
         }
 
         /* Disable alternating background colors for tables */
