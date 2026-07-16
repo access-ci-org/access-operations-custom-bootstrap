@@ -1,12 +1,10 @@
 // scss/_styles_access.scss
 
 h3, .h3 {
-  color: $dark !important;
+  color: $dark;
 }
 
 .btn.btn-link {
-  color: $black;
-
   &:hover {
     color: $primary;
   }
@@ -16,11 +14,14 @@ h3, .h3 {
 @each $name, $color in $theme-colors {
 
   .text-#{$name} {
-    &.btn.btn-link, &.btn-link {
+    &.btn.btn-link,
+    &.btn-link,
+    .btn.btn-link,
+    .btn-link {
       color: $color;
 
       &:hover {
-        color: $primary !important;
+        color: $primary;
       }
     }
   }
@@ -29,10 +30,10 @@ h3, .h3 {
     color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $white);
 
     .btn.btn-link {
-      color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $white);
+      color: color-contrast($color, $color-contrast-dark: $black, $color-contrast-light: $accent-primary);
 
       &:hover {
-        color: color-contrast($color, $color-contrast-dark: $primary, $color-contrast-light: $accent-primary);
+        color: color-contrast($color, $color-contrast-dark: $primary, $color-contrast-light: $accent-secondary);
       }
     }
 
