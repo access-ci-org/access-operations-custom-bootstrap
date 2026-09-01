@@ -82,6 +82,12 @@
   }
 
   .modal-#{$theme-name} {
+    .modal-body {
+      text-align: center;
+      padding-bottom: 70px !important;
+      font-size: map-get($font-sizes, 5);
+    }
+
     .modal-header {
       background-color: $theme-color;
       color: color-contrast($theme-color, $color-contrast-dark: $black, $color-contrast-light: $white) !important;
@@ -105,13 +111,15 @@
         }
 
         .bi {
-          @extend .text-#{$theme-name};
-
+          color: $theme-color;
           position: absolute;
-          top: 37px;
+          top: 25px;
           font-size: 100px;
           left: 40%;
         }
+
+        // This is to make sure the icon is not overlapping with the modal-body
+        margin-bottom: 90px !important;
       }
     }
   }
@@ -157,25 +165,6 @@ h4, .h4 {
     &.text-decoration-none:hover {
       text-decoration: underline !important;
     }
-  }
-}
-
-.modal-body {
-  padding-top: 90px !important;
-  padding-bottom: 70px !important;
-  text-align: center;
-  font-size: 20px;
-}
-
-.modal-title {
-  position: relative;
-  width: 100%;
-
-  .bi.center-and-large-icon {
-    position: absolute;
-    top: -8px;
-    font-size: 100px;
-    left: 40%;
   }
 }
 
