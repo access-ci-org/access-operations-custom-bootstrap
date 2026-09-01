@@ -43,7 +43,7 @@
   }
 
   .bg-#{$theme-name} {
-    color: color-contrast($theme-color, $color-contrast-dark: $black, $color-contrast-light: $white) !important;
+    color: color-contrast($theme-color, $color-contrast-dark: $black, $color-contrast-light: $white);
 
     @include generate_btn_link_colors($background-color: $theme-color);
     @include generate_typography_colors($background-color: $theme-color);

@@ -7,10 +7,13 @@ The general format of entries is:
         - <webapp path 2>
         - *
 
-v0.1.1 2026-07-16 dinukadesilva
+v0.1.2 2026-09-01 dinukadesilva
+    1 - [fix] Fix text color overrides in `bg-${variant}` classes
+
+v0.1.1 2026-09-01 dinukadesilva
     1 - [fix] Fix minor alignments and styles in modals
 
-v0.1.0 2026-07-16 dinukadesilva
+v0.1.0 2026-09-01 dinukadesilva
     1 - [new] Enabling variants in modals
 
 v0.0.19 2026-07-16 dinukadesilva
