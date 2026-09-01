@@ -80,6 +80,41 @@
       color: color-contrast($theme-color, $color-contrast-dark: $secondary-dark, $color-contrast-light: $white);
     }
   }
+
+  .modal-#{$theme-name} {
+    .modal-header {
+      background-color: $theme-color;
+      color: color-contrast($theme-color, $color-contrast-dark: $black, $color-contrast-light: $white) !important;
+
+      .modal-title {
+        color: inherit;
+      }
+
+      &.modal-icon-header {
+
+        @if $theme-name == "primary" {
+          background-color: $light;
+          color: color-contrast($light, $color-contrast-dark: $black, $color-contrast-light: $white) !important;
+        } @else {
+          background-color: tint-color($theme-color, 80%);
+          color: color-contrast(tint-color($theme-color, 80%), $color-contrast-dark: $black, $color-contrast-light: $white) !important;
+        }
+
+        .modal-title {
+          @extend .visually-hidden;
+        }
+
+        .bi {
+          @extend .text-#{$theme-name};
+
+          position: absolute;
+          top: 37px;
+          font-size: 100px;
+          left: 40%;
+        }
+      }
+    }
+  }
 }
 
 body {
