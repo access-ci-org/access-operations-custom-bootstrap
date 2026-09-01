@@ -7,6 +7,10 @@ The general format of entries is:
         - <webapp path 2>
         - *
 
+
+v0.1.3 2026-09-01 dinukadesilva
+    1 - [fix] Fix alignments in modal icon headers
+
 v0.1.2 2026-09-01 dinukadesilva
     1 - [fix] Fix text color overrides in `bg-${variant}` classes
 

@@ -113,10 +113,12 @@
         .bi {
           color: $theme-color;
           position: absolute;
-          top: 25px;
+          bottom: -80px;
           font-size: 100px;
           left: 40%;
         }
+
+        position: relative;
 
         // This is to make sure the icon is not overlapping with the modal-body
         margin-bottom: 90px !important;
