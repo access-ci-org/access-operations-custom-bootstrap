@@ -102,8 +102,8 @@
           background-color: $light;
           color: color-contrast($light, $color-contrast-dark: $black, $color-contrast-light: $white) !important;
         } @else {
-          background-color: tint-color($theme-color, 80%);
-          color: color-contrast(tint-color($theme-color, 80%), $color-contrast-dark: $black, $color-contrast-light: $white) !important;
+          background-color: tint-color($theme-color, 90%);
+          color: color-contrast(tint-color($theme-color, 90%), $color-contrast-dark: $black, $color-contrast-light: $white) !important;
         }
 
         .modal-title {
