@@ -39,7 +39,7 @@
 @each $theme-name, $theme-color in $theme-colors {
 
   .text-#{$theme-name} {
-    // @include generate_btn_link_colors($color: $theme-color);
+    @include generate_btn_link_colors($color: $theme-color);
   }
 
   .bg-#{$theme-name} {

@@ -8,6 +8,10 @@ The general format of entries is:
         - *
 
 
+
+v0.1.6 2026-09-16 dinukadesilva
+    1 - [fix] Preserving btn-link.text-{variant}
+
 v0.1.5 2026-09-16 dinukadesilva
     1 - [fix] Fix btn-link colors
 
