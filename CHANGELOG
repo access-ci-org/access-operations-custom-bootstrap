@@ -8,6 +8,9 @@ The general format of entries is:
         - *
 
 
+v0.1.5 2026-09-16 dinukadesilva
+    1 - [fix] Fix btn-link colors
+
 v0.1.4 2026-09-01 dinukadesilva
     1 - [fix] Fix the modal header background color shade
 

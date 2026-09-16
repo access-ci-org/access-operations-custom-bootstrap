@@ -35,17 +35,17 @@
 @include generate_typography_colors();
 @include generate_btn_link_colors();
 
-// Compile button styles
+// Compile themes
 @each $theme-name, $theme-color in $theme-colors {
 
   .text-#{$theme-name} {
-    @include generate_btn_link_colors($color: $theme-color);
+    // @include generate_btn_link_colors($color: $theme-color);
   }
 
   .bg-#{$theme-name} {
     color: color-contrast($theme-color, $color-contrast-dark: $black, $color-contrast-light: $white);
 
-    @include generate_btn_link_colors($background-color: $theme-color);
+    // @include generate_btn_link_colors($background-color: $theme-color);
     @include generate_typography_colors($background-color: $theme-color);
   }
 
