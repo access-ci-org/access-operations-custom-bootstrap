@@ -8,6 +8,8 @@ The general format of entries is:
         - *
 
 
+v0.1.7 2026-10-07 dinukadesilva
+    1 - [new] Adding the opacity shades to the color palette
 
 v0.1.6 2026-09-16 dinukadesilva
     1 - [fix] Preserving btn-link.text-{variant}
