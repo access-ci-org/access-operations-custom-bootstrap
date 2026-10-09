@@ -8,6 +8,9 @@ The general format of entries is:
         - *
 
 
+v0.1.9 2026-10-10 dinukadesilva
+    1 - [new] Adding "hover" classes for "bg", "text", "border" and "opacity"
+
 v0.1.8 2026-10-09 dinukadesilva
     1 - [new] Adding the color codes to the opacity shades
 

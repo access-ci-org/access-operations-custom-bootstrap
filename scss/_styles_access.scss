@@ -35,8 +35,40 @@
 @include generate_typography_colors();
 @include generate_btn_link_colors();
 
+
+$extracted-bg-opacities: map-get(map-get($utilities, "bg-opacity"), "values");
+
+@each $key, $value in $extracted-bg-opacities {
+  .hover-bg-opacity-#{$key}:hover {
+    // Wrap $value in #{} so Sass compiles the actual number
+    --bs-bg-opacity: #{$value};
+  }
+
+  .hover-text-opacity-#{$key}:hover {
+    // Wrap $value in #{} so Sass compiles the actual number
+    --bs-text-opacity: #{$value};
+  }
+
+  .hover-border-opacity-#{$key}:hover {
+    // Wrap $value in #{} so Sass compiles the actual number
+    --bs-border-opacity: #{$value};
+  }
+}
+
+
 // Compile themes
 @each $theme-name, $theme-color in $theme-colors {
+  .hover-bg-#{$theme-name}:hover {
+    background-color: $theme-color !important;
+  }
+
+  .hover-text-#{$theme-name}:hover {
+    color: $theme-color !important;
+  }
+
+  .hover-border-#{$theme-name}:hover {
+    border-color: $theme-color !important;
+  }
 
   .text-#{$theme-name} {
     @include generate_btn_link_colors($color: $theme-color);
