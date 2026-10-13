@@ -8,6 +8,9 @@ The general format of entries is:
         - *
 
 
+v0.2.0 2026-10-13 dinukadesilva
+    1 - [new] Adding `node_modules` to scss path
+
 v0.1.9 2026-10-10 dinukadesilva
     1 - [new] Adding "hover" classes for "bg", "text", "border" and "opacity"
 
