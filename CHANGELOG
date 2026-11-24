@@ -8,6 +8,9 @@ The general format of entries is:
         - *
 
 
+v0.2.1 2026-11-24 dinukadesilva
+    1 - [new] Documenting the breaking changes from drupal theme (CTT-1064)
+
 v0.2.0 2026-10-13 dinukadesilva
     1 - [new] Adding `node_modules` to scss path
 

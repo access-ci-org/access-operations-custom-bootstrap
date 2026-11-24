@@ -16,15 +16,15 @@ Include the required Google Fonts in your application's `<head>` section.
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link
-    rel="stylesheet"
-    id="google-font-archivo-css"
-    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,70,400;0,100,400;0,100,500;0,100,600;0,100,700;0,100,800;1,100,400&display=swap"
-    media="all"
+        rel="stylesheet"
+        id="google-font-archivo-css"
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,70,400;0,100,400;0,100,500;0,100,600;0,100,700;0,100,800;1,100,400&display=swap"
+        media="all"
 />
 
 <link
-    href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap"
-    rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap"
+        rel="stylesheet"
 />
 ```
 
@@ -55,7 +55,7 @@ import "access-operations-custom-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 
 // Optional: Import Bootstrap JavaScript, react-bootstrap components, etc. depending on your project setup.
-import { Modal } from "react-bootstrap";
+import {Modal} from "react-bootstrap";
 ```
 
 ## Using a CDN
@@ -65,10 +65,32 @@ If you don't want to install the package through npm, you can include the compil
 ```html
 <!-- ACCESS Operations Bootstrap CSS -->
 <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/access-ci-org/access-operations-custom-bootstrap@0.0.13/dist/access-operations-custom-bootstrap.css"
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/access-ci-org/access-operations-custom-bootstrap@0.0.13/dist/access-operations-custom-bootstrap.css"
 />
 
 <!-- Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 ```
+
+## Breaking Changes
+
+This library was originally part of [Operations_Drupal_Theme](https://github.com/access-ci-org/Operations_Drupal_Theme)
+and was extracted into an independent repository so other projects could reuse the styles. During this extraction, we
+updated several CSS utility class names to align with the ACCESS Style Guide.
+
+### `medium` → `primary`
+
+Applies to all variant utility classes. Here are few examples:
+
+* `text-medium` → `text-primary`
+* `bg-medium` → `bg-primary`
+* `border-medium` → `border-primary`
+
+### `primary` → `accent-primary`
+
+Applies to all variant utility classes. Here are few examples:
+
+* `text-primary` → `text-accent-primary`
+* `bg-primary` → `bg-accent-primary`
+* `border-primary` → `border-accent-primary`
